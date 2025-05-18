@@ -3,66 +3,94 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Zinah Ghulam</title>
+  <title>Zinah Ghulam | Projects</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      padding-top: 70px;
+    }
+  </style>
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">Zinah Ghulam</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about-me">About Me</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#fusionvitnet">FusionViTNet</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lung-nodule">Lung Nodule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#diabetic-foot">Diabetic Foot</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#extracurriculars">Extracurriculars</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <header class="bg-dark text-white text-center py-5">
-    <h1>Projects</h1>
-  </header>
-
-  <section class="container py-5" id="fusionvitnet">
-    <h2>FusionViTNet</h2>
-    <img src="assets/images/fusionvitnet.jpg" alt="FusionViTNet" class="img-fluid mb-3" />
-    <p>
-      Developed a hybrid CNN and Vision Transformer model (FusionViTNet) for accurate carotid artery segmentation from ultrasound images, improving diagnostic capabilities.
-    </p>
-  </section>
-
-  <section class="container py-5" id="lung-nodule">
-    <h2>Lung Nodule Segmentation</h2>
-    <img src="assets/images/lung-nodule.jpg" alt="Lung Nodule Segmentation" class="img-fluid mb-3" />
-    <p>
-      Designed and trained deep learning models for lung nodule detection and segmentation to aid radiologists in lung cancer diagnosis.
-    </p>
-    <a href="https://github.com/zinahghul/Lung-Nodule-Segmentation" target="_blank" class="btn btn-primary">GitHub Repository</a>
-  </section>
-
-  <section class="container py-5" id="diabetic-foot-ulcer">
-    <h2>Diabetic Foot Ulcer Monitoring</h2>
-    <div class="row mb-3">
-      <div class="col-md-6">
-        <img src="assets/images/sock.jpg" alt="Thermal Sock" class="img-fluid" />
+  <main class="container">
+    <!-- FusionViTNet -->
+    <section id="fusionvitnet" class="py-5">
+      <h2>FusionViTNet</h2>
+      <img src="assets/images/fusionvitnet.jpg" alt="FusionViTNet Model" class="img-fluid mb-3" />
+      <p>
+        Developed a hybrid CNN and Vision Transformer model for accurate carotid artery segmentation in ultrasound images.
+      </p>
+      <div class="row">
+        <div class="col-md-4 mb-2">
+          <img src="assets/images/dia1.png" alt="Diagram 1" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-4 mb-2">
+          <img src="assets/images/dia2.png" alt="Diagram 2" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-4 mb-2">
+          <img src="assets/images/error.png" alt="Error Map" class="img-fluid rounded" />
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="assets/images/sock-phone.jpg" alt="Sock Phone App" class="img-fluid" />
+      <a href="https://github.com/zinahghul/FusionViTNet" target="_blank" class="btn btn-primary mt-3">GitHub Repo</a>
+    </section>
+
+    <hr />
+
+    <!-- Lung Nodule -->
+    <section id="lung-nodule" class="py-5">
+      <h2>Lung Nodule Segmentation</h2>
+      <img src="assets/images/lung-nodule.jpg" alt="Lung Nodule Segmentation" class="img-fluid mb-3" />
+      <p>
+        Deep learning-based automatic lung nodule detection system to aid radiologists in early diagnosis.
+      </p>
+      <a href="https://github.com/zinahghul/Lung-Nodule-Segmentation" target="_blank" class="btn btn-primary">GitHub Repo</a>
+    </section>
+
+    <hr />
+
+    <!-- Diabetic Foot -->
+    <section id="diabetic-foot" class="py-5">
+      <h2>Diabetic Foot Ulcer Monitoring</h2>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <img src="assets/images/sock.jpg" alt="Thermal Sock" class="img-fluid rounded" />
+        </div>
+        <div class="col-md-6 mb-3">
+          <img src="assets/images/sock-phone.jpg" alt="Sock App Interface" class="img-fluid rounded" />
+        </div>
       </div>
-    </div>
-    <p>
-      Created a thermal and pressure sensing sock with a smartphone app interface for early detection and monitoring of diabetic foot ulcers.
-    </p>
-    <a href="https://github.com/zinahghul/disense-app" target="_blank" class="btn btn-primary">GitHub Repository</a>
-  </section>
+      <p>
+        Designed and developed a thermal and pressure sensing sock to monitor diabetic foot ulcers, connected to a mobile app.
+      </p>
+      <a href="https://github.com/zinahghul/disense-app" target="_blank" class="btn btn-primary">GitHub Repo</a>
+    </section>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js
+</body>
+</html>
