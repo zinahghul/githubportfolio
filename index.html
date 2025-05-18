@@ -9,15 +9,12 @@
   <style>
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 70px;
     }
     body {
       padding-top: 70px;
     }
-    section {
-      min-height: 100vh;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+    h2 {
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -26,7 +23,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#about-me">Zinah Ghulam</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -43,77 +40,62 @@
   </nav>
 
   <main class="container">
-    <section id="about-me">
+    <section id="about-me" class="py-5">
       <h2>About Me</h2>
-      <img src="assets/images/zinah.jpg" alt="Zinah Ghulam" class="img-fluid mb-3" style="max-width: 200px;" />
-      <p>Biomedical Engineering MASc student specializing in AI-driven medical imaging and diagnostics, passionate about advancing patient care through technology.</p>
+      <p>
+        I'm a dedicated Biomedical Engineering and AI Specialist with a strong background in medical imaging and device design. I lead innovative projects, mentor student teams, and work on healthcare-focused applications powered by AI and machine learning.
+      </p>
     </section>
 
-    <section id="education">
+    <section id="education" class="py-5">
       <h2>Education</h2>
       <ul>
-        <li><strong>MASc in Biomedical Engineering</strong> – University of Guelph (2024–2026)</li>
-        <li><strong>BASc in Biomedical Engineering</strong> – Toronto Metropolitan University (2019–2024)</li>
+        <li><strong>University of Guelph</strong> – MASc, Biomedical Engineering + AI, 2024–Present</li>
+        <li><strong>University of Guelph</strong> – BASc, Biomedical Engineering, 2020–2024</li>
       </ul>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="py-5">
       <h2>Experience</h2>
       <ul>
-        <li><strong>Graduate Researcher</strong> – Guelph Imaging AI Lab (2024–Present)</li>
-        <li><strong>Research Intern</strong> – Vector Institute (2024–Present)</li>
-        <li><strong>Machine Learning Intern</strong> – HealthTech Startup (2023)</li>
+        <li><strong>Graduate Teaching Assistant</strong>, Biomechanics Lab – Sep 2023–Present</li>
+        <li><strong>Software Developer</strong>, Robotics Institute – May 2022–Present</li>
+        <li><strong>Research Assistant</strong>, Robotics Institute – Oct 2023</li>
+        <li><strong>Pharmacy Assistant</strong>, Pharmasave – Jan 2022–Apr 2022</li>
       </ul>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="py-5">
       <h2>Projects</h2>
-      <div class="mb-5">
-        <h3>FusionViTNet</h3>
-        <img src="assets/images/fusionvitnet.jpg" alt="FusionViTNet Model" class="img-fluid mb-3" />
-        <div class="row">
-          <div class="col-md-4"><img src="assets/images/dia1.png" class="img-fluid mb-2" alt="Diagram 1"></div>
-          <div class="col-md-4"><img src="assets/images/dia2.png" class="img-fluid mb-2" alt="Diagram 2"></div>
-          <div class="col-md-4"><img src="assets/images/error.png" class="img-fluid mb-2" alt="Error Analysis"></div>
-        </div>
-        <p>Developed a hybrid CNN and Vision Transformer model for accurate carotid artery segmentation in ultrasound images.</p>
-        <a href="https://github.com/zinahghul/FusionViTNet" target="_blank" class="btn btn-primary">GitHub Repo</a>
-      </div>
 
-      <div class="mb-5">
-        <h3>Lung Nodule Segmentation</h3>
-        <img src="assets/images/lung-nodule.jpg" alt="Lung Nodule Segmentation" class="img-fluid mb-3" />
-        <p>Deep learning-based automatic lung nodule detection system to aid radiologists in early diagnosis.</p>
-        <a href="https://github.com/zinahghul/Lung-Nodule-Segmentation" target="_blank" class="btn btn-primary">GitHub Repo</a>
-      </div>
+      <h4>FusionViTNet</h4>
+      <img src="assets/images/fusionvitnet.jpg" alt="FusionViTNet Model" class="img-fluid mb-2" />
+      <p>Hybrid CNN and ViT model for carotid artery segmentation in ultrasound images.</p>
+      <a href="https://github.com/zinahghul/FusionViTNet" target="_blank" class="btn btn-primary mb-4">GitHub Repo</a>
 
-      <div class="mb-5">
-        <h3>Diabetic Foot Ulcer Monitoring</h3>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <img src="assets/images/sock.jpg" alt="Thermal Sock" class="img-fluid rounded" />
-          </div>
-          <div class="col-md-6 mb-3">
-            <img src="assets/images/sock-phone.jpg" alt="Sock App Interface" class="img-fluid rounded" />
-          </div>
-        </div>
-        <p>Designed and developed a thermal and pressure sensing sock to monitor diabetic foot ulcers, connected to a mobile app.</p>
-        <a href="https://github.com/zinahghul/disense-app" target="_blank" class="btn btn-primary">GitHub Repo</a>
+      <h4>Lung Nodule Segmentation</h4>
+      <img src="assets/images/lung-nodule.jpg" alt="Lung Nodule" class="img-fluid mb-2" />
+      <p>Deep learning-based lung nodule detection system to support radiologists.</p>
+      <a href="https://github.com/zinahghul/Lung-Nodule-Segmentation" target="_blank" class="btn btn-primary mb-4">GitHub Repo</a>
+
+      <h4>Diabetic Foot Ulcer Monitoring</h4>
+      <div class="row">
+        <div class="col-md-6"><img src="assets/images/sock.jpg" alt="Sock Device" class="img-fluid rounded" /></div>
+        <div class="col-md-6"><img src="assets/images/sock-phone.jpg" alt="App Interface" class="img-fluid rounded" /></div>
       </div>
+      <p>Smart sock for diabetic foot monitoring using pressure and thermal sensors, connected to a mobile app.</p>
+      <a href="https://github.com/zinahghul/disense-app" target="_blank" class="btn btn-primary">GitHub Repo</a>
     </section>
 
-    <section id="extracurriculars">
+    <section id="extracurriculars" class="py-5">
       <h2>Extracurriculars</h2>
-      <img src="assets/images/pdc-peo.jpg" alt="PDC-PEO" class="img-fluid mb-3" style="max-width: 400px;" />
-      <p>Active member in professional engineering communities and student leadership roles.</p>
+      <p>President of Graduate Engineering Society (GES). Active in academic mentoring and leadership initiatives at the University of Guelph.</p>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="py-5">
       <h2>Contact</h2>
-      <ul>
-        <li>Email: <a href="mailto:zinahghulam@gmail.com">zinahghulam@gmail.com</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/zinah-ghulam/" target="_blank">zinah-ghulam</a></li>
-      </ul>
+      <p>Email: <a href="mailto:zinahghulam@gmail.com">zinahghulam@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/zinah-ghulam" target="_blank">linkedin.com/in/zinah-ghulam</a></p>
     </section>
   </main>
 
