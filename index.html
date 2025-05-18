@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,40 +8,72 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="bg-dark text-white text-center py-5">
-    <!-- Hero image -->
-    <img src="assets/images/hero.jpg" alt="Hero Banner" class="img-fluid rounded mb-4" style="max-height: 300px; object-fit: cover;" />
-    <h1>Zinah Ghulam</h1>
-    <p class="lead">Biomedical Engineer | AI & Medical Imaging</p>
-    <!-- Headshot -->
-    <img src="assets/images/zinah.jpg" alt="Zinah Ghulam Headshot" class="rounded-circle mt-3" style="width: 150px; height: 150px; object-fit: cover;" />
-  </header>
 
-  <section class="container py-5">
-    <h2>About Me</h2>
-    <p>I am a Master's student at the University of Guelph specializing in AI-driven medical imaging.</p>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Zinah Ghulam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="bg-light text-center py-5">
+    <div class="container">
+      <img src="assets/images/hero.jpg" alt="Hero Image" class="img-fluid rounded mb-4" style="max-height: 400px;" />
+      <h1 class="display-4">Welcome to My Portfolio</h1>
+      <p class="lead">Biomedical Engineer | AI & Medical Imaging Specialist</p>
+    </div>
   </section>
 
-  <section class="bg-light py-5">
-    <div class="container">
-      <h2 class="mb-4">Projects</h2>
-      <div class="row">
-        <div class="col-md-4 mb-4">
-          <div class="card h-100">
-            <img src="assets/images/zinah.jpg" class="card-img-top" alt="Project 1" />
-            <div class="card-body">
-              <h5 class="card-title">FusionViTNet</h5>
-              <p class="card-text">Hybrid CNN-ViT model for carotid artery segmentation.</p>
-              <a href="projects.html" class="btn btn-primary">View Project</a>
-            </div>
-          </div>
-        </div>
-        <!-- Add more projects here -->
+  <!-- About Me -->
+  <section id="about" class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="assets/images/zinah.jpg" alt="Zinah Ghulam" class="img-fluid rounded-circle mb-3" style="max-width: 250px;" />
+      </div>
+      <div class="col-md-8">
+        <h2>About Me</h2>
+        <p>
+          I am a Master's student at the University of Guelph specializing in AI-driven medical imaging. 
+          I focus on hybrid models combining convolutional neural networks and vision transformers to improve diagnostic accuracy.
+        </p>
       </div>
     </div>
   </section>
 
-  <section class="container py-5">
+  <!-- Projects -->
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2 class="mb-4 text-center">Projects</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/zinah.jpg" class="card-img-top" alt="FusionViTNet Project" />
+            <div class="card-body">
+              <h5 class="card-title">FusionViTNet</h5>
+              <p class="card-text">Hybrid CNN-ViT model for carotid artery segmentation in ultrasound images.</p>
+              <a href="projects.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container py-5">
     <h2>Contact</h2>
     <p>Reach out for collaborations or opportunities.</p>
     <a href="contact.html" class="btn btn-dark">Contact Me</a>
