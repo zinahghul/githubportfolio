@@ -12,6 +12,27 @@
     }
     body {
       padding-top: 70px;
+      background-color: #f8f9fa;
+    }
+    h2 {
+      border-bottom: 2px solid #dee2e6;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .project-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .btn-outline-primary:hover, .btn-dark:hover {
+      transform: scale(1.05);
+      transition: 0.2s ease;
+    }
+    .img-fluid {
+      max-height: 300px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -62,21 +83,29 @@
     <section id="projects" class="py-5">
       <h2>Projects</h2>
 
-      <h4>FusionViTNet</h4>
-      <p>Hybrid CNN and ViT model for carotid artery segmentation in ultrasound images.</p>
-      <a href="https://github.com/zinahghul/FusionViTNet" target="_blank" class="btn btn-outline-primary btn-sm">GitHub Repo</a>
-
-      <h4 class="mt-4">Lung Nodule Segmentation</h4>
-      <p>AI-based system for early lung nodule detection from CT images.</p>
-      <a href="https://github.com/zinahghul/Lung-Nodule-Segmentation" target="_blank" class="btn btn-outline-primary btn-sm">GitHub Repo</a>
-
-      <h4 class="mt-4">Diabetic Foot Ulcer Monitoring</h4>
-      <div class="row">
-        <div class="col-md-6 mb-3"><img src="assets/images/sock.jpg" class="img-fluid rounded" alt="Sock Device" /></div>
-        <div class="col-md-6 mb-3"><img src="assets/images/sock-phone.jpg" class="img-fluid rounded" alt="Sock App" /></div>
+      <div class="project-card">
+        <h4>FusionViTNet</h4>
+        <p>Hybrid CNN and ViT model for carotid artery segmentation in ultrasound images.</p>
+        <a href="https://github.com/zinahghul/FusionViTNet" target="_blank" class="btn btn-outline-primary btn-sm">GitHub Repo</a>
       </div>
-      <p>Thermal and pressure-sensing sock integrated with a mobile app to monitor diabetic foot ulcers.</p>
-      <a href="https://github.com/zinahghul/disense-app" target="_blank" class="btn btn-outline-primary btn-sm">GitHub Repo</a>
+
+      <div class="project-card">
+        <h4>Lung Nodule Segmentation</h4>
+        <p>AI-based system for early lung nodule detection from CT images.</p>
+        <a href="https://github.com/zinahghul/Lung-Nodule-Segmentation" target="_blank" class="btn btn-outline-primary btn-sm">GitHub Repo</a>
+      </div>
+
+      <div class="project-card">
+        <h4>Diabetic Foot Ulcer Monitoring</h4>
+        <div class="row">
+          <div class="col-md-4 mb-3"><img src="assets/images/dia1.png" class="img-fluid rounded" alt="dia1" /></div>
+          <div class="col-md-4 mb-3"><img src="assets/images/dia2.png" class="img-fluid rounded" alt="dia2" /></div>
+          <div class="col-md-4 mb-3"><img src="assets/images/error.png" class="img-fluid rounded" alt="error" /></div>
+        </div>
+        <p>Thermal and pressure-sensing sock integrated with a mobile app to monitor diabetic foot ulcers. Includes data acquisition, model-based optimization, and a real-time Android interface.</p>
+        <a href="https://github.com/zinahghul/disense-app" target="_blank" class="btn btn-outline-primary btn-sm">GitHub Repo</a>
+        <a href="https://www.mdpi.com/1424-8220/24/21/6928" target="_blank" class="btn btn-dark btn-sm ms-2">Read the Paper</a>
+      </div>
     </section>
 
     <section id="extracurriculars" class="py-5">
