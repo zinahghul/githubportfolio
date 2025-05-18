@@ -9,9 +9,15 @@
   <style>
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 70px;
     }
     body {
       padding-top: 70px;
+    }
+    section {
+      min-height: 100vh;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
     }
   </style>
 </head>
@@ -19,13 +25,15 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Zinah Ghulam</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand" href="#about-me">Zinah Ghulam</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#extracurriculars">Extracurriculars</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -35,37 +43,50 @@
   </nav>
 
   <main class="container">
-    <!-- About Me Section -->
-    <section id="about-me" class="py-5">
-      <h1>About Me</h1>
-      <p>I’m Zinah Ghulam, a Biomedical Engineering Master’s student specializing in AI-driven medical image analysis. I focus on leveraging deep learning for ultrasound, diabetic foot ulcer monitoring, and lung diagnostics.</p>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <img src="assets/images/zinah.jpg" alt="Zinah Ghulam" class="img-fluid mb-3" style="max-width: 200px;" />
+      <p>Biomedical Engineering MASc student specializing in AI-driven medical imaging and diagnostics, passionate about advancing patient care through technology.</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-      <h2>Projects</h2>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>MASc in Biomedical Engineering</strong> – University of Guelph (2024–2026)</li>
+        <li><strong>BASc in Biomedical Engineering</strong> – Toronto Metropolitan University (2019–2024)</li>
+      </ul>
+    </section>
 
-      <!-- FusionViTNet -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Graduate Researcher</strong> – Guelph Imaging AI Lab (2024–Present)</li>
+        <li><strong>Research Intern</strong> – Vector Institute (2024–Present)</li>
+        <li><strong>Machine Learning Intern</strong> – HealthTech Startup (2023)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
       <div class="mb-5">
         <h3>FusionViTNet</h3>
         <img src="assets/images/fusionvitnet.jpg" alt="FusionViTNet Model" class="img-fluid mb-3" />
-        <p>
-          Developed a hybrid CNN and Vision Transformer model for accurate carotid artery segmentation in ultrasound images.
-        </p>
+        <div class="row">
+          <div class="col-md-4"><img src="assets/images/dia1.png" class="img-fluid mb-2" alt="Diagram 1"></div>
+          <div class="col-md-4"><img src="assets/images/dia2.png" class="img-fluid mb-2" alt="Diagram 2"></div>
+          <div class="col-md-4"><img src="assets/images/error.png" class="img-fluid mb-2" alt="Error Analysis"></div>
+        </div>
+        <p>Developed a hybrid CNN and Vision Transformer model for accurate carotid artery segmentation in ultrasound images.</p>
         <a href="https://github.com/zinahghul/FusionViTNet" target="_blank" class="btn btn-primary">GitHub Repo</a>
       </div>
 
-      <!-- Lung Nodule -->
       <div class="mb-5">
         <h3>Lung Nodule Segmentation</h3>
         <img src="assets/images/lung-nodule.jpg" alt="Lung Nodule Segmentation" class="img-fluid mb-3" />
-        <p>
-          Built a deep learning system for automatic lung nodule segmentation to support early diagnosis in CT scans.
-        </p>
+        <p>Deep learning-based automatic lung nodule detection system to aid radiologists in early diagnosis.</p>
         <a href="https://github.com/zinahghul/Lung-Nodule-Segmentation" target="_blank" class="btn btn-primary">GitHub Repo</a>
       </div>
 
-      <!-- Diabetic Foot -->
       <div class="mb-5">
         <h3>Diabetic Foot Ulcer Monitoring</h3>
         <div class="row">
@@ -76,27 +97,23 @@
             <img src="assets/images/sock-phone.jpg" alt="Sock App Interface" class="img-fluid rounded" />
           </div>
         </div>
-        <p>
-          Designed a smart sock that monitors thermal and pressure variations to prevent diabetic foot ulcers, integrated with a mobile app.
-        </p>
+        <p>Designed and developed a thermal and pressure sensing sock to monitor diabetic foot ulcers, connected to a mobile app.</p>
         <a href="https://github.com/zinahghul/disense-app" target="_blank" class="btn btn-primary">GitHub Repo</a>
       </div>
     </section>
 
-    <!-- Extracurriculars Section -->
-    <section id="extracurriculars" class="py-5">
+    <section id="extracurriculars">
       <h2>Extracurriculars</h2>
-      <p>
-        Active in student leadership as a GESS executive, IEEE member, and mentor in the Women in Engineering society. Passionate about empowering others and creating impact beyond the lab.
-      </p>
+      <img src="assets/images/pdc-peo.jpg" alt="PDC-PEO" class="img-fluid mb-3" style="max-width: 400px;" />
+      <p>Active member in professional engineering communities and student leadership roles.</p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:ghulamz@uoguelph.ca">ghulamz@uoguelph.ca</a></p>
-      <p>GitHub: <a href="https://github.com/zinahghul" target="_blank">github.com/zinahghul</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/zinahghulam/" target="_blank">linkedin.com/in/zinahghulam</a></p>
+      <ul>
+        <li>Email: <a href="mailto:zinahghulam@gmail.com">zinahghulam@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/zinah-ghulam/" target="_blank">zinah-ghulam</a></li>
+      </ul>
     </section>
   </main>
 
