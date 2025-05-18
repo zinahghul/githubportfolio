@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zinah Ghulam | Projects</title>
+  <title>Zinah Ghulam | Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
   <style>
@@ -19,29 +19,35 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Zinah Ghulam</a>
+      <a class="navbar-brand" href="#">Zinah Ghulam</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html#about-me">About Me</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#extracurriculars">Extracurriculars</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#extracurriculars">Extracurriculars</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <main class="container">
+    <!-- About Me Section -->
+    <section id="about-me" class="py-5">
+      <h1>About Me</h1>
+      <p>I’m Zinah Ghulam, a Biomedical Engineering Master’s student specializing in AI-driven medical image analysis. I focus on leveraging deep learning for ultrasound, diabetic foot ulcer monitoring, and lung diagnostics.</p>
+    </section>
+
     <!-- Projects Section -->
     <section id="projects" class="py-5">
-      <h1 class="mb-5">Projects</h1>
+      <h2>Projects</h2>
 
       <!-- FusionViTNet -->
-      <section id="fusionvitnet" class="mb-5">
-        <h2>FusionViTNet</h2>
+      <div class="mb-5">
+        <h3>FusionViTNet</h3>
         <img src="assets/images/fusionvitnet.jpg" alt="FusionViTNet Model" class="img-fluid mb-3" />
         <p>
           Developed a hybrid CNN and Vision Transformer model for accurate carotid artery segmentation in ultrasound images.
@@ -58,21 +64,21 @@
           </div>
         </div>
         <a href="https://github.com/zinahghul/FusionViTNet" target="_blank" class="btn btn-primary mt-3">GitHub Repo</a>
-      </section>
+      </div>
 
       <!-- Lung Nodule -->
-      <section id="lung-nodule" class="mb-5">
-        <h2>Lung Nodule Segmentation</h2>
+      <div class="mb-5">
+        <h3>Lung Nodule Segmentation</h3>
         <img src="assets/images/lung-nodule.jpg" alt="Lung Nodule Segmentation" class="img-fluid mb-3" />
         <p>
-          Deep learning-based automatic lung nodule detection system to aid radiologists in early diagnosis.
+          Built a deep learning system for automatic lung nodule segmentation to support early diagnosis in CT scans.
         </p>
         <a href="https://github.com/zinahghul/Lung-Nodule-Segmentation" target="_blank" class="btn btn-primary">GitHub Repo</a>
-      </section>
+      </div>
 
       <!-- Diabetic Foot -->
-      <section id="diabetic-foot" class="mb-5">
-        <h2>Diabetic Foot Ulcer Monitoring</h2>
+      <div class="mb-5">
+        <h3>Diabetic Foot Ulcer Monitoring</h3>
         <div class="row">
           <div class="col-md-6 mb-3">
             <img src="assets/images/sock.jpg" alt="Thermal Sock" class="img-fluid rounded" />
@@ -82,10 +88,26 @@
           </div>
         </div>
         <p>
-          Designed and developed a thermal and pressure sensing sock to monitor diabetic foot ulcers, connected to a mobile app.
+          Designed a smart sock that monitors thermal and pressure variations to prevent diabetic foot ulcers, integrated with a mobile app.
         </p>
         <a href="https://github.com/zinahghul/disense-app" target="_blank" class="btn btn-primary">GitHub Repo</a>
-      </section>
+      </div>
+    </section>
+
+    <!-- Extracurriculars Section -->
+    <section id="extracurriculars" class="py-5">
+      <h2>Extracurriculars</h2>
+      <p>
+        Active in student leadership as a GESS executive, IEEE member, and mentor in the Women in Engineering society. Passionate about empowering others and creating impact beyond the lab.
+      </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:zghulam@uoguelph.ca">zghulam@uoguelph.ca</a></p>
+      <p>GitHub: <a href="https://github.com/zinahghul" target="_blank">github.com/zinahghul</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/zinahghulam/" target="_blank">linkedin.com/in/zinahghulam</a></p>
     </section>
   </main>
 
